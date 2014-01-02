@@ -48,7 +48,7 @@ class SaveFTP:
             logging.error("SaveFTP::send() Exception: %s" % e)
         
 
-class dumpMySQL:
+class DumpMySQL:
     """把mysql dump成sql,然后再打包"""
     host = 'localhost'
     user = 'root'
@@ -99,7 +99,7 @@ logging.basicConfig(filename = '%s/bak.log' % dir, level = logging.DEBUG, format
 
 # dump mysql sql file
 db_config = config._sections['db']
-dm = dumpMySQL(**db_config)
+dm = DumpMySQL(**db_config)
 file = dm.tar()
 
 # upload to ftp server
