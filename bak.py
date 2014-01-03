@@ -66,7 +66,7 @@ class DumpMySQL:
     def dump(self):
         self.sql_file = "%s_%s.sql" % (self.db_name, strftime("%Y%m%d%H%M%S"))
         cmd = "mysqldump -h%s -u%s -p%s %s > %s" % (self.host, self.user, self.pwd, self.db_name, self.sql_file)
-        logging.info("dumpMySQL::dump() cmd: %s" % cmd);
+        logging.info("DumpMySQL::dump() cmd: %s" % cmd);
         try:
             subprocess.call(cmd, shell=True)
         except Exception as e:
