@@ -93,7 +93,7 @@ else:
 config.read(dir + '/bak.cfg')
 
 # log init
-fmt = "%(asctime)s - %(levelname)s - %(message)s"
+fmt = "%(asctime)s [%(levelname)s] %(message)s"
 datefmt = '%Y-%m-%d %H:%M:%S'
 logging.basicConfig(filename = '%s/bak.log' % dir, level = logging.DEBUG, format=fmt, datefmt=datefmt)
 
