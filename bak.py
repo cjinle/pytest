@@ -70,7 +70,7 @@ class DumpMySQL:
         try:
             subprocess.call(cmd, shell=True)
         except Exception as e:
-            logging.error("dumpMySQL::dump() Exception: %s" % e);
+            logging.error("DumpMySQL::dump() Exception: %s" % e);
     
     def tar(self):
         self.tar_file = self.sql_file + '.tar.gz'
@@ -80,7 +80,7 @@ class DumpMySQL:
             os.remove(self.sql_file)
             return self.tar_file
         except Exception as e:
-            logging.error("dumpMySQL::tar() Exception: %s" % e);
+            logging.error("DumpMySQL::tar() Exception: %s" % e);
     
 
 
