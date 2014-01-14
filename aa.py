@@ -2,6 +2,7 @@
 
 import MySQLdb
 from common import Log
+from common import Common
 
 con = MySQLdb.connect(host='localhost', user='root', passwd="")
 cur = con.cursor()
