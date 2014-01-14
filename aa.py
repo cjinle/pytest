@@ -1,6 +1,7 @@
 # --*-- utf-8 --*--
 
 import MySQLdb
+from common import Log
 
 con = MySQLdb.connect(host='localhost', user='root', passwd="")
 cur = con.cursor()
