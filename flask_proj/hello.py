@@ -10,11 +10,6 @@ def index():
 @app.route("/hello")
 def hello():
     return "Hello World!"
-
-@app.route("/404")
-def page404():
-    app.logger.debug("404 message mark.")
-    abort(404)
     
 @app.route("/l")
 def l():

@@ -1,1 +1,9 @@
 *.py[co]
+*.ini
+*.log
+*.txt
+*.cfg
+*.tar.gz
+*.tar
+.project
+.pydevproject
