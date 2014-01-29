@@ -1,1 +1,4 @@
 .title{color:red}
+.footer{margin:20px;color:#111;}
+p{border:1px solid #CCC;margin:2px;}
+span.num-block{border:1px solid #000;margin:5px;padding:5px;line-height:40px;}

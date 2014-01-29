@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    {% block head %}
+    <title>Jinja2 Test</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    {% endblock %}
+  </head>
+
+  <body>
+  {% block content %}{% endblock %}
+  {% block footer %}
+  <div class="footer">Copyright &copy; 2014</div>
+  {% endblock %}
+  </body>
+</html>
