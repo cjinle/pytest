@@ -6,7 +6,4 @@
 2. 然后要用的时候，可以__继承__{% extends 'base.html' %}
 3. 只能是__单一__继承，但可以层级继承
 
-
-
-
-[详细官方文档](http://jinja.pocoo.org/docs/)
+> [详细Jinja2官方文档](http://jinja.pocoo.org/docs/)
