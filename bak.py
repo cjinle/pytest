@@ -81,9 +81,22 @@ class DumpMySQL:
             return self.tar_file
         except Exception as e:
             logging.error("DumpMySQL::tar() Exception: %s" % e);
+            
     
 
 
+class TarFiles:
+    def __init__(self):
+        pass
+        
+    def tar(self):
+        pass
+        
+    def __del__(self):
+        pass
+    
+    
+    
 # get config file
 config = ConfigParser.ConfigParser()
 if os.path.dirname(__file__):
@@ -107,5 +120,4 @@ ftp_config = config._sections['ftp']
 sf = SaveFTP(**ftp_config)
 sf.send(file)
 os.remove(file) # delete tar file
-    
         
