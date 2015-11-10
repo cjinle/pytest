@@ -10,7 +10,7 @@ from email.message import Message
 HOST='smtp.163.com'
 PORT=25
 USER='seeec@163.com'
-PASS='33135331.'
+PASS=''
 TO='cjinle@gmail.com'
 LOG='crawl/out.log'
 
