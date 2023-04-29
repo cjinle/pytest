@@ -1,3 +1,0 @@
-[defaults]
-name=Lok Chen
-
