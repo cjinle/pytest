@@ -9,6 +9,7 @@ def iconv(filename):
     print("start iconv", filename)
     cmd = [
         "iconv",
+        "-s"
         "-f",
         "gbk",
         "-t",
@@ -23,10 +24,11 @@ def iconv(filename):
 
 # find . -name "*.py" -or -name "*.md"
 
+filepath = "/data/wwwroot/server/hallid"
+
 cmd = [
     "find",
-    # "/data/wwwroot/server/server_hallid",
-    "/data/wwwroot/server/hallid",
+    filepath,
     "-name",
     "*.cpp",
     "-or",
